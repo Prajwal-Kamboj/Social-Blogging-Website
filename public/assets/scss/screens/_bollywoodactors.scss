@@ -1,0 +1,71 @@
+.actors-container {
+
+  .actors-jumbotron {
+    position: relative;
+
+    .actors-jumbotron-image {
+      width: 100%;
+      height: calc(100vh - 80px);
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+
+  .actors-jumbotron-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    background: linear-gradient(0deg, #0A0710 0.08%, rgba(27, 18, 50, 0.71) 14.72%, rgba(88, 58, 173, 0.15) 38.55%, rgba(88, 58, 173, 0) 60.78%, rgba(88, 58, 173, 0) 99.44%);;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .actors-jumbotron-heading {
+      font-size: 2.4em;
+      font-family: Circular;
+    }
+
+    .actors-jumbotron-desc div {
+      width: 100% !important;
+      font-size: 1.1em;
+    }
+  }
+
+  .actors-jumbotron-side-content {
+    color: white;
+    padding: 0 60px;
+
+    .actors-jumbotron-content {
+      position: static;
+      background: transparent;
+    }
+  }
+
+  .bollywood-actor-celebs {
+    padding: 50px 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0;
+
+    .actors-jumbotron {
+      .actors-jumbotron-image {
+        height: auto;
+      }
+    }
+
+    .actors-jumbotron-content {
+      .actors-jumbotron-heading {
+        font-size: 1.9em;
+      }
+
+      .actors-jumbotron-desc div {
+        font-size: 1em;
+      }
+    }
+  }
+}

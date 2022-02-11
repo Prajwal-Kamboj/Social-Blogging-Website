@@ -1,0 +1,17 @@
+node_modules
+ccid
+.next
+.env.dev
+Dockerfile-dev
+Dockerfile-qa
+cicd/deployment-preprod.yml
+cicd/deployment-prod.yml
+cicd/deployment-qa.yml
+cicd/hpa-preprod.yml
+cicd/hpa-prod.yml
+cicd/hpa-qa.yml
+cicd/service-preprod.yml
+cicd/service-prod.yml
+cicd/service-qa.yml
+cicd/deployment-preprod.yml
+keystone/

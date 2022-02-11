@@ -1,0 +1,117 @@
+.celebrities-container {
+  padding: 220px 0 0;
+
+  .section-heading {
+    margin-bottom: 35px;
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    font-family: Circular;
+  }
+
+  .alice-carousel__stage-item {
+    text-align: center;
+  }
+
+  .alice-carousel__dots {
+    margin-top: 50px;
+  }
+
+  .alice-carousel-container {
+    .alice-carousel-left-button {
+      left: -2%;
+      top: 40%;
+    }
+
+    .alice-carousel-right-button {
+      right: -2%;
+      top: 40%;
+    }
+  }
+
+  .item-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    
+
+    .item-image {
+      position: relative;
+
+      span {
+        position: static !important;
+      }
+
+      img {
+        position: static !important;
+        min-width: 90% !important;
+        height: auto !important;
+      }
+    }
+
+    .item-text {
+      margin-bottom: 0;
+      color: white;
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      padding: 0 15px 0 calc(15px + 10%);
+      text-align: left;
+      font-size: 1.1em;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 190px 0 0;
+
+    .container {
+      max-width: 100%;
+    }
+
+    .section-heading {
+      font-size: 1.8em;
+    }
+
+    .item-container {
+
+      .item-image {
+        img {
+          min-width: 100% !important;
+        }
+      }
+
+      .item-text {
+        bottom: 10px;
+        padding: 0 15px 0 25px;
+        font-size: 1em;
+      }
+    }
+
+    .alice-carousel__dots {
+      margin-top: 25px;
+    }
+
+    .alice-carousel-container {
+      padding-left: 0;
+      padding-right: 0;
+
+      .alice-carousel__stage {
+        width: 90%;
+      }
+
+      .alice-carousel__stage-item {
+        width: 50% !important;
+      }
+
+      .alice-carousel-left-button {
+        left: 3%;
+        display: none;
+      }
+
+      .alice-carousel-right-button {
+        right: 3%;
+        display: none;
+      }
+    }
+  }
+}

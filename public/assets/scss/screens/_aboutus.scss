@@ -1,0 +1,69 @@
+.about-us {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .section-heading {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+  }
+
+  .about-us-text {
+    font-size: 1.2em;
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .section-heading {
+      font-size: 1.8em;
+    }
+
+    .about-us-text {
+      font-size: 0.9em;
+    }
+  }
+
+}
+
+.about-cta {
+  width: 100vw;
+  background-color: #221B31;
+  text-align: center;
+  padding: 80px 15px;
+
+  .heading-1 {
+    padding: 0 15px 40px;
+    margin-bottom: 0;
+    font-size: 2.5em;
+  }
+
+  .para-1 {
+    margin-bottom: 0;
+    padding: 0 15px 40px;
+    font-size: 1.2em;
+  }
+
+  .button {
+    width: 343px;
+    height: 50px;
+    background: linear-gradient(91.12deg, #BA58E8 0%, #6258E8 100%);
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    height: 300px;
+    .heading-1 {
+      font-size: 1.8em;
+    }
+    .para-1 {
+      font-size: 0.9em;
+    }
+
+    .button {
+      margin-top: 0;
+    }
+  }
+}

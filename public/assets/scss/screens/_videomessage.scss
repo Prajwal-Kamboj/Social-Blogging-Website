@@ -1,0 +1,204 @@
+.video-message-container {
+  position: relative;
+  line-height: 0;
+  background-color: #151319;
+  height: 90vh;
+
+  .video-message {
+    padding: 10px 80px;
+    background: linear-gradient(90deg, #000000 0%, #280B26 28.13%, rgba(119, 34, 112, 0.23) 77.15%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    line-height: normal;
+  }
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.d-md-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .video-message-video {
+    // width: 100%;
+    // object-position: 100% 100%;
+    height: calc(100vh - 135px);
+    z-index: 1;
+  }
+  .video-message-image {
+    width: 50%;
+    // object-position: 100% 100%;
+    height: calc(100vh - 135px);
+    object-fit: cover;
+    object-position: top center;
+    // opacity: 40%;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .gradient-black{
+    opacity: 40%;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+  }
+
+  .play-icon-vm{
+    position: fixed;
+    // right: 45%;
+    // top: 45%;
+    cursor: pointer;
+    z-index: 4;
+  }
+  .blur-background{
+
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+    filter: blur(84px);
+    z-index: 1;
+    margin-top: -100vh;
+  }
+
+  @media screen and (max-width: 991px) {
+    .video-message {
+      padding: 10px 50px;
+    }
+
+    .play-video-button {
+      top: 78%;
+    }
+    .d-md-flex{
+      display: block;
+    }
+  }
+
+  
+
+  @media screen and (max-width: 767px) {
+    .blur-background{
+      display: none;
+    }
+    .video-message {
+      background: linear-gradient(180deg, #000000 5%, rgba(40, 11, 38, 0.9) 11.46%, rgba(119, 34, 112, 0.09) 39.58%, rgba(159, 45, 149, 0.28) 50%, rgba(52, 40, 174, 0.37) 100%);
+      padding: 15px 15px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    .video-message-video {
+      height: calc(100vh - 300px);
+      object-fit: cover;
+      object-position: top center;
+      width: 100%;
+    }
+    .video-message-image {
+      height: calc(100vh - 300px);
+      width: 100%;
+      
+    }
+  }
+}
+
+
+
+.fixed-button-container{
+  position: fixed;
+  bottom:0;
+  padding: 10px;
+  background: #251E33;
+  width: 100%;
+  justify-content: center;
+  z-index: 5;
+  
+
+  .button{
+    height: 50px;
+    background: linear-gradient(91.12deg, #BA58E8 0%, #6258E8 100%);
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+    width: 343px;
+    // min-width: 343px;
+    // min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .fixed-text{
+    color:white;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+}
+@media screen and (max-width: 767px){
+  .fixed-button-container{
+    display: grid;
+
+
+    .fixed-text{
+      text-align: center;
+    padding-bottom: 10px;
+
+    }
+    .button{
+      font-size: 16px;
+      max-width: 350px;
+    }
+  }  
+
+}
+@media screen and (min-width: 767px){
+  .fixed-button-container{
+    display: flex;
+    align-items: center;
+
+    .fixed-text{
+      margin-right: 40px;
+      font-size: 20px;
+      font-weight: 500px;
+
+    }
+    .button{
+
+      font-size: 20px;
+    }
+  }  
+}
+
+
+.header {
+  background-color: #151319;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .brand-logo {
+    height: 25px;
+  }
+
+  @media only screen and (max-width: 767px) {
+  }
+}

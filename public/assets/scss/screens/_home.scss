@@ -1,0 +1,91 @@
+.home-page-container {
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+  min-height: 100vh;
+
+  font-family: "Times New Roman", Times, serif;
+  .heading {
+    text-align: center;
+  }
+}
+
+.txt-dark {
+  color: #112031;
+}
+.txt-light {
+  color: #d4ecdd;
+}
+.dark {
+  background-color: #112031;
+}
+.light {
+  background-color: #d4ecdd;
+}
+
+.parallax {
+  // background-image: url("/assets/images/eren.jpeg");
+  // background-attachment: fixed;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // opacity: 0.6;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+
+  .form {
+    height: 70vh;
+    width: 50vh;
+    // border: #112031 2px solid;
+
+    .form-heading {
+      padding: 2em;
+      padding-bottom: 0em;
+      font-weight: 400;
+    }
+    .inputs {
+      display: flex;
+      padding: 30px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      input {
+        height: calc(3.5rem + 2px);
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 1rem 0.75rem;
+        width: 70%;
+
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+    }
+
+    .login-button {
+      width: 50%;
+      height: 7%;
+    }
+  }
+}

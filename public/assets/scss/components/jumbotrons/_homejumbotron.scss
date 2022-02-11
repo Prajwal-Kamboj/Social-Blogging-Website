@@ -1,0 +1,143 @@
+.home-jumbotron-container {
+  position: relative;
+
+  .home-jumbotron {
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #0A0710 61.3%, rgba(88, 58, 173, 0.15) 90.25%, rgba(88, 58, 173, 0.02) 99.44%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .home-jumbotron-video {
+    height: calc(100vh - 68px);
+    width: 100%;
+    object-position: 100% 100%;
+  }
+
+  .play-video-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 17%;
+    top: 68%;
+    transform: translate(50%, -50%);
+    z-index: 10;
+    cursor: pointer;
+
+    .play-video-icon {
+      margin-bottom: 10px;
+    }
+
+    .play-video-text {
+      color: white;
+      font-size: 0.8em;
+    }
+  }
+
+  .home-jumbotron-heading {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 3.6vw;
+
+    span {
+      display: inline-block;
+      position: relative;
+      background: linear-gradient(to right, #BA58E8 0%, #6258E8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      /*&:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: calc(100% - 2px);
+        width: 65%;
+        left: 0;
+        transform: translate(0, 0);
+        background: linear-gradient(91.12deg, #BA58E8 0%, #6258E8 100%);
+        height: 4px;
+      }*/
+    }
+  }
+
+  .home-jumbotron-description {
+    color: white;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 1.3vw;
+  }
+
+  .custom-btn-primary {
+    border-radius: 40px;
+    padding: 0.375rem 2rem;
+  }
+
+  @media screen and (max-width: 991px) {
+    .home-jumbotron {
+      background: linear-gradient(90deg, #0A0710 46.3%, rgba(88, 58, 173, 0.15) 90.25%, rgba(88, 58, 173, 0.02) 99.44%);
+      padding: 10px 15px;
+    }
+
+    .play-video-button {
+      top: 78%;
+    }
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .home-jumbotron {
+      background: linear-gradient(0deg, #0A0710 0.08%, rgba(27, 18, 50, 0.71) 14.72%, rgba(88, 58, 173, 0.15) 38.55%, rgba(88, 58, 173, 0) 60.78%, rgba(88, 58, 173, 0) 99.44%);
+      padding: 20px 25px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: normal;
+      justify-content: flex-end;
+      max-width: 100%;
+    }
+
+    .home-jumbotron-video {
+      height: calc(100vh - 22vh);
+      object-fit: cover;
+      object-position: 50% 20%;
+    }
+
+    .home-jumbotron-row {
+      margin-bottom: -20%;
+    }
+
+    .home-jumbotron-heading {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .home-jumbotron-description {
+      margin-bottom: 0;
+      padding: 10px 0;
+      font-size: 1em;
+
+      .primary-color {
+        color: white;
+      }
+    }
+
+    .play-video-button {
+      right: 50%;
+      top: 50%;
+
+      .play-video-icon {
+        margin-bottom: 0;
+      }
+
+      .play-video-text {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,239 @@
+.what-our-winners-saying {
+  padding: 100px 0;
+
+  .section-heading {
+    margin-bottom: 0;
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+  }
+
+  .what-our-winners-desc {
+    color: white;
+    padding: 10px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .alice-carousel {
+    .alice-carousel__stage-item {
+      padding: 0 20px;
+      width: 90%;
+    }
+
+    .alice-carousel__dots {
+      margin-top: 0;
+      display: none;
+    }
+  }
+
+  .alice-carousel-container {
+    .alice-carousel-left-button, .alice-carousel-right-button {
+    }
+
+    .alice-carousel-left-button {
+      left: -3%;
+    }
+
+    .alice-carousel-right-button {
+      right: -3%;
+    }
+  }
+
+  .fan-reaction-carousel {
+    // border: 0.5px solid #D8D8D8;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    margin: 15px;
+    margin-bottom: 0px;
+    // padding: 20px 0;
+
+    .fan-profile-details {
+      padding-left: 0;
+      display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+
+      .fan-profile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .profile-image {
+          position: relative;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: top;
+          overflow: hidden;
+        }
+
+        .profile-name {
+          margin-bottom: 0;
+          font-size: 1.1em;
+          text-align: left;
+          padding-left: 15px;
+
+          .profile-city {
+            display: inline-block;
+            font-size: 0.75em;
+            margin-top: 2px;
+            // font-size: 0.8em;
+            // font-style: italic;
+            color: $text-secondary;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .profile-text {
+        margin: 20px auto 0;
+        font-size: 1.5em;
+        font-weight: 500;
+        max-width: 350px;
+        text-align: center;
+      }
+    }
+
+    .profile-description {
+      font-size: 0.9em;
+      font-weight: 500;
+      max-width: 350px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .fan-profile-video {
+      height: 225px;
+      width: 225px;
+      cursor: pointer;
+      position: relative;
+
+      .fan-profile-video-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 -10px;
+        filter: brightness(0.6);
+      }
+
+      .fan-profile-video-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &.bollywood-reviews {
+    padding: 50px 0;
+
+    .card-video {
+      object-position: center;
+    }
+
+    .fan-reaction-carousel {
+      margin-left: 10px;
+      margin-right: 10px;
+
+      .fan-profile-details {
+        .fan-profile {
+          flex: 1 1;
+        }
+
+        .profile-image {
+          margin-right: 10px;
+        }
+
+        .profile-name {
+          font-size: 1.08em !important;
+          padding-left: 0;
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          span {
+            font-family: Circular;
+          }
+
+          .profile-city {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+
+    .card-text {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .section-heading {
+      margin-bottom: 0;
+      font-size: 1.8em;
+    }
+
+    .what-our-winners-desc {
+      font-size: 0.9em;
+    }
+
+    .alice-carousel {
+      .alice-carousel__stage-item {
+        padding: 0 15px;
+      }
+
+      .alice-carousel__dots {
+        display: flex;
+      }
+    }
+
+    .alice-carousel-container {
+      .alice-carousel-left-button, .alice-carousel-right-button {
+        display: none;
+      }
+    }
+
+    .fan-reaction-carousel {
+
+      .fan-profile-details {
+        .fan-profile {
+          flex-direction: row;
+          justify-content: center;
+
+          .profile-image {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            margin-bottom: 0;
+          }
+
+          .profile-name {
+            font-size: 1em;
+            text-align: left;
+          }
+        }
+
+        .profile-text {
+          font-size: 1.2em;
+        }
+      }
+
+      .profile-description {
+        font-size: 0.8em;
+        // margin: 30px 0 0;
+        min-height: 50px;
+      }
+
+      .fan-profile-video {
+        width: 85%;
+        max-width: 240px;
+      }
+    }
+  }
+}

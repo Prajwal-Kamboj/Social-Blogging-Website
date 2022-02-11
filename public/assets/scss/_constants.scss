@@ -1,0 +1,10 @@
+$primary-color: #9969FF;
+$primary-gradient: linear-gradient(91.12deg, #BA58E8 0%, #6258E8 100%);
+$text-primary: #FFFFFF;
+$text-secondary: #E5E5E5;
+// $circularPrimary:
+@font-face {
+  font-family: Circular;
+  src: url('/assets/fonts/circular.ttf');
+  font-display: fallback;
+}

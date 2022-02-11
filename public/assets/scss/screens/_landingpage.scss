@@ -1,0 +1,132 @@
+.landing-page-container {
+  background-image: url('/assets/images/landing-background.png');
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  padding-top: 50px;
+
+  .logo {
+    height: 50px;
+    margin: 25px 50px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+  }
+
+  .celebrity-image-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 0 0 45%;
+    max-width: 45%;
+
+    .celebrity-image {
+      height: 100vh;
+    }
+  }
+
+  .content-container-col {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 0 0 55%;
+    max-width: 55%;
+  }
+
+  .content-container {
+    color: white;
+
+    .content {
+      text-align: center;
+      font-size: 5.5vw;
+      font-weight: 500;
+      margin: 0;
+
+      span {
+        display: block;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-size: 0.55em;
+      }
+    }
+
+    .download-button {
+      background: linear-gradient(270deg, #4A9C2C -4.79%, #4B9F2D 15.69%, #5FC83C 42.44%, #4A9C2C 68.62%, #4A9C2C 104.47%);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 16px;
+      padding: 15px 30px;
+      color: rgba(255, 255, 255, 0.8);
+      outline: none;
+      border: 0;
+      font-size: 2em;
+      font-weight: 500;
+      cursor: pointer;
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    min-height: 100vh;
+    background-image: url('/assets/images/landing-background-m.png');
+
+    .logo {
+      height: 40px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin: 25px 0;
+    }
+
+    .celebrity-image-container {
+      justify-content: center;
+      align-items: flex-end;
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      .celebrity-image {
+        width: 90%;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+
+    .content-container-col {
+      justify-content: center;
+      position: static;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .content-container {
+      padding-top: 30px;
+
+      .content {
+        font-size: 1.8rem;
+
+        span {
+          font-size: 0.85em;
+          font-weight: 400;
+        }
+      }
+
+      .download-button {
+        padding: 10px 30px;
+        border-radius: 8px;
+        font-size: 1.2em;
+        font-weight: 500;
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 80%;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.birthday-scheduler {
+  background-color: #0A0710;
+  min-height: 100vh;
+  padding-bottom: 100px;
+
+  .birthday-scheduler-logo {
+    text-align: center;
+    padding: 20px 10px 30px;
+    position: relative;
+
+    &:after {
+      content: '';
+      height: 1px;
+      display: inline-block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50.15%, rgba(255, 255, 255, 0) 100%);
+      opacity: 0.8;
+    }
+  }
+
+  .birthday-scheduler-content {
+    padding: 15px;
+  }
+
+  .birthday-scheduler-header {
+    color: white;
+    font-size: 1.6em;
+  }
+
+  .birthday-scheduler-desc {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .custom-btn-primary {
+    border-radius: 40px;
+    padding: 10px;
+  }
+
+  .form-control {
+    background-color: #1A1A21;
+    border: 0;
+    color: white;
+
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+
+  .edit-date {
+    margin-left: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  .birthday-scheduler-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 15px 30px;
+    background-color: #0A0710;
+  }
+
+  .birthday-scheduler-submit-img {
+    position: relative;
+    height: 45vh;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(180deg, #6258E8 0%, #50348C 36.98%, #BD00FF 100%);
+      opacity: 0.08;
+      filter: blur(50px);
+    }
+
+    img {
+      object-fit: contain;
+    }
+  }
+}

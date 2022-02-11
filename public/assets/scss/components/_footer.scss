@@ -1,0 +1,230 @@
+.footer-component {
+  margin: 0;
+  background-color: #1C1C1F;
+  padding: 30px 0 20px;
+  border-top: 1px solid #868686;
+  position: relative;
+  color: $text-secondary;
+
+  .brand-logo {
+    height: 45px;
+    width: auto;
+  }
+
+
+  .make-with-love-in-india {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0 30px;
+    font-size: 1.2em;
+
+    .heart-image {
+      width: 20px;
+    }
+
+    &:after {
+      content: '';
+      height: 1px;
+      display: inline-block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      // border-bottom: 1px solid #CCCCCC;
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50.15%, rgba(255, 255, 255, 0) 100%);
+      opacity: 0.8;
+    }
+  }
+
+  .download-app {
+    .download-app-image {
+      height: 50px;
+      cursor: pointer;
+      width: auto;
+    }
+  }
+
+  .footer-nav-links {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+    &:after {
+      content: '';
+      height: 1px;
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      // border-bottom: 1px solid #CCCCCC;
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50.15%, rgba(255, 255, 255, 0) 100%);
+      opacity: 0.8;
+    }
+
+    .footer-nav-links-heading {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .footer-nav-link {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+
+      span {
+        cursor: pointer;
+
+        &:hover {
+          font-weight: 500;
+        }
+      }
+
+    }
+  }
+
+  .social-links-download-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    margin-bottom: 0;
+
+    .download-app-text {
+      color: white;
+      text-align: left;
+    }
+  }
+
+  .footer-social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 20px;
+
+    .footer-social-icon {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      cursor: pointer;
+
+      .social-icon {
+        background-color: #6258E8;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .footer-copy-rights-content {
+    padding: 10px 0 20px;
+    font-size: 1.2em;
+  }
+
+  @media screen and (max-width: 767px) {
+    border-top: 0;
+    padding: 30px 0 100px;
+
+    .section-heading {
+      border-bottom: 1px solid #D2D2D2;
+    }
+
+    .footer-copy-rights-content {
+      text-align: center;
+      font-size: 1em;
+    }
+
+    .footer-nav-links {
+      padding-top: 20px;
+
+      &:nth-child(2) {
+        padding-left: 0;
+      }
+
+      &:after {
+        display: inline-block;
+      }
+
+      .footer-nav-links-heading {
+        font-size: 0.9em;
+      }
+
+      .footer-nav-link {
+        font-size: 1em;
+        text-align: center;
+      }
+    }
+
+    .social-links-download-container {
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-bottom: 3rem;
+
+      .download-app-text {
+        opacity: 0.8;
+        text-align: center;
+      }
+    }
+
+    .footer-social-icons {
+      justify-content: center;
+      padding-bottom: 20px;
+
+      .footer-social-icon {
+        margin-left: 10px;
+        margin-right: 10px;
+
+        .social-icon {
+          width: 40px;
+          height: 40px;
+          font-size: 1.2em;
+          line-height: 0;
+        }
+      }
+    }
+
+    .download-app {
+      text-align: center;
+
+      .download-app-image {
+        height: 60px;
+      }
+    }
+  }
+}
+
+.fixed-footer {
+  background-color: #1C1D23;
+  border-radius: 24px 24px 0 0;
+  position: fixed;
+  bottom: -100%;
+  width: 100%;
+  height: 135px;
+  z-index: 999;
+  transition: all 800ms ease;
+
+  &.active {
+    bottom: 0;
+  }
+}
+
+.fixed-button {
+  margin: 40px 16px;
+  background: linear-gradient(91.12deg, #BA58E8 0%, #6258E8 100%);
+  box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  color: $text-primary;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 0px;
+}

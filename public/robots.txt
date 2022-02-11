@@ -1,0 +1,2 @@
+Sitemap: https://www.truefan.in/sitemap.xml
+User-agent: *

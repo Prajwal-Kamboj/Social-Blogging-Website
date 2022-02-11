@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://www.truefan.in/sitemap.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <loc>https://www.truefan.in/sitemap-static.xml</loc>
+        <lastmod>2022-01-04T12:00:00+00:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.truefan.in/blog/post-sitemap.xml</loc>
+        <lastmod>2022-01-04T12:00:00+00:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.truefan.in/category-sitemap.xml</loc>
+        <lastmod>2022-01-04T12:00:00+00:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://www.truefan.in/post_tag-sitemap.xml</loc>
+        <lastmod>2022-01-04T12:00:00+00:00</lastmod>
+    </sitemap>
+</sitemapindex>
