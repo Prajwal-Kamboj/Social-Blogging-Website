@@ -4,40 +4,70 @@ import {useRouter} from "next/router";
 
 import { Button } from "react-bootstrap";
 import { ListGroup } from "react-bootstrap";
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
 
 const Users = (props) =>{
     const router = useRouter();
-    const [users, setUsers] = useState({});
+    const [users, setUsers] = useState();
     
     const fetchUsers = async () =>{
-      const response = await fetch('http://localhost:3000/users', {method:'GET', headers: { 'Content-Type': 'application/json' },});
+      const response = await fetch('http://localhost:3000/users', {method:'GET', headers: { 'Content-Type': 'application/json' }});
       const json = await response.json();
-      // setData(response);
-      setUsers(json.data);
-      console.log(json);
-
+      setUsers(json);
     }
 
     useEffect(() =>{
          fetchUsers();
-         console.log("data",users)
-
     },[])
+
     return(
         <Page>
         <h1 className="text-center pd-20">
           List of all users
         </h1>
-        { users.lenght>0 ? 
+
+        <TableContainer component={Paper}>
+      <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
+        <TableHead>
+          <TableRow>
+            <TableCell>Dessert (100g serving)</TableCell>
+            <TableCell align="right">Calories</TableCell>
+            <TableCell align="right">Fat&nbsp;(g)</TableCell>
+            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
+            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+        { users ?  
         <>{users.map((item, index)=>{
           return (
-            <div key={index} className="text-center">
-              <ListGroup as="ol" numbered>
-                <ListGroup.Item as="li">{item.username}</ListGroup.Item>
-              </ListGroup>
-            </div>
+
+            <TableRow
+            key={index}
+            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+          >
+            <TableCell component="th" scope="row">
+              'My row'
+            </TableCell>
+            <TableCell align="right">{item.username}</TableCell>
+            <TableCell align="right">{item.username}</TableCell>
+            <TableCell align="right">{item.username}</TableCell>
+            <TableCell align="right">{item.username}</TableCell>
+          </TableRow>
           );
         })}</>:null}
+           
+
+        </TableBody>
+      </Table>
+    </TableContainer>
+        
         </Page>
         
 
