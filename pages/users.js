@@ -29,18 +29,18 @@ const Users = (props) =>{
     return(
         <Page>
         <h1 className="text-center pd-20">
-          List of all users
+          Here is a List of all users
         </h1>
 
         <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
         <TableHead>
           <TableRow>
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">Calories</TableCell>
-            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+            <TableCell>Name</TableCell>
+            <TableCell align="right">id</TableCell>
+            <TableCell align="right">something</TableCell>
+            <TableCell align="right">Some other thing</TableCell>
+            <TableCell align="right">wow)</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -53,7 +53,7 @@ const Users = (props) =>{
             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
           >
             <TableCell component="th" scope="row">
-              'My row'
+              Username
             </TableCell>
             <TableCell align="right">{item.username}</TableCell>
             <TableCell align="right">{item.username}</TableCell>
