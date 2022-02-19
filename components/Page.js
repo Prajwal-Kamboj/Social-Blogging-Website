@@ -7,7 +7,7 @@ const Page = (props) =>{
     return(
         <>
         <div className={props.className}>
-        <Header></Header>
+        <Header loggedIn = {props.loggedIn}></Header>
 
         {props.children}
         </div>

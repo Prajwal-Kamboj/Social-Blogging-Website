@@ -27,7 +27,7 @@ const Login = (props) =>{
         else{
             setErrorText(false);
             setErrorMessage('');
-            const result = await fetch('http://localhost:3000/users', {method:'POST', body: JSON.stringify(user), headers: { 'Content-Type': 'application/json' },});
+            const result = await fetch('http://localhost:4000/users', {method:'POST', body: JSON.stringify(user), headers: { 'Content-Type': 'application/json' },});
             const response = await result.json();
             router.push('/users')
         }

@@ -17,28 +17,5 @@ export const jsonToForm = (data) => {
 
 
 export default {
-    security: {
-        getAppConfig: (data) => (makeRequest(
-            `${HOST}/security/api/getAppConfig`,
-            {method: 'GET'}, false
-        )),
-        addBirthday: (data) => (makeRequest(
-            `${HOST}/security/api/auth/add-birthday-web`,
-            {method: 'POST', bodyType: 'json', body: JSON.stringify(data)}, false
-        )),
-    },
-    refund: {
-        refundRequest: ({id, ...data}) => (makeRequest(
-            `${HOST}/celeb/api/video-request/refund-request/${id}?${getQueryString(data)}`,
-            {method: 'POST'}, false
-        )),
-    },
-
-    authenticator:{
-        authenticateCode:
-        (otp)=>(makeRequest(
-            `${HOST}/celeb/api/auth/user/verify-video-authentication?authenticationToken=${otp}`,
-            {method: 'GET'}, false
-        )),
-     }
+    
 }
