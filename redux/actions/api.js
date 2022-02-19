@@ -16,17 +16,6 @@ export const jsonToForm = (data) => {
 };
 
 
-export const addFileToForm = ({form = new FormData(), key, file}) => {
-    // form.append(key, {
-    //     uri: file.uri,
-    //     name: file.name,
-    //     type: file.type ? file.type : 'image/jpg',
-    // });
-    form.append(key, file, file.name);
-    return form;
-};
-
-
 export default {
     security: {
         getAppConfig: (data) => (makeRequest(
