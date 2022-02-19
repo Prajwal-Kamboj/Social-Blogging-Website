@@ -15,3 +15,4 @@ cicd/service-prod.yml
 cicd/service-qa.yml
 cicd/deployment-preprod.yml
 keystone/
+.env.prod
