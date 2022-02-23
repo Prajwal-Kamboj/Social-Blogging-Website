@@ -1,0 +1,75 @@
+.cara-container {
+  margin: auto;
+  width: 50%;
+  height: 200px;
+  padding-top: 20em;
+  position: sticky;
+  border: 5px solid #ffff00;
+  padding: 10px;
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .card-1 {
+    text-align: center;
+  }
+  .desc {
+    vertical-align: text-bottom;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .plus {
+    float: right;
+  }
+  .minus {
+    float: left;
+  }
+}
